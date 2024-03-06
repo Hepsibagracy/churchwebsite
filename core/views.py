@@ -38,8 +38,8 @@ def contact(request):
         subject=request.POST['subject']
         message=request.POST["message"]
 
-        contact=Contact(name=name,email=email,phone=phone,subject=subject,message=message)
-        contact.save()
+        contactdata=Contact(name=name,email=email,phone=phone,subject=subject,message=message)
+        contactdata.save()
 
         print(name)
         print(email)

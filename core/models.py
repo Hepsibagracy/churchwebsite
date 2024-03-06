@@ -14,7 +14,7 @@ class Contact(models.Model):
     uid=models.UUIDField(primary_key=True,default=uuid.uuid4,editable=False)
     name=models.CharField(max_length=60)
     email=models.EmailField(max_length=100)
-    phone=models.CharField(max_length=10)
+    phone=models.IntegerField(max_length=10)
     subject=models.CharField(max_length=200)
     message=models.TextField(max_length=1000)
 
