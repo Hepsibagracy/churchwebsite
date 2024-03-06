@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width:500px) {
+    /*===============conatct=======================*/
+
+    .maincontainer {
+        width: 100%;
+        font-family: "Poppins", sans-serif;
+        background-color: aqua;
+        
+
+    }
+
+    .contact {
+        color: blue;
+        text-align: center;
+        font-size: 30px;
+       
+    }
+
+    .maincontainer h1 {
+        color: blue;
+        font-size: 30px;
+      
+        margin-bottom: 10px;
+    }
+
+    .contact-box {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .left {
+        
+        padding: 40px 40px;
+        background-color: white;
+    }
+
+    .right {
+        
+        padding: 40px;
+        background-color: blue;
+        color: white;
+    }
+
+    .input-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-group {
+        flex-basis: 40%;
+    }
+
+    input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        padding-bottom: 5px;
+    }
+
+    textarea {
+        width: 100%;
+        border: 1px solid black;
+        outline: none;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    label {
+        margin-bottom: 10px;
+        display: block;
+        color: black;
+    }
+
+    button {
+        margin-top: 10px;
+        background-color: blue;
+        color: white;
+        width: 100px;
+        height: 30px;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        border-radius: 0px 5px 15px blue;
+    }
+
+    .left h3 {
+        color: blue;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .right tr {
+        color: white;
+    }
+
+    .right h3 {
+        color: white;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    tr td:first-child {
+        padding-right: 20px;
+    }
+
+    tr td {
+        padding-top: 20px;
+    }  
+}
+
+@media only screen and (min-width:501px) and (max-width:798px) {
+  /*===============conatct=======================*/
+
+    .maincontainer {
+        width: 100%;
+        font-family: "Poppins", sans-serif;
+        background-color: aqua;
+        margin: 0px;
+      
+    }
+   
+    .contact {
+        color: blue;
+        text-align: center;
+        font-size: 50px;
+        background-color: aqua;
+    }
+
+    .maincontainer h1 {
+        color: blue;
+        font-size: 30px;
+       
+        margin-bottom: 10px;
+    }
+
+    .contact-box {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        
+        
+
+    }
+
+    .left {
+        
+        padding: 40px 40px;
+        background-color: white;
+        border:2px solid blue;
+    }
+
+    .right {
+       
+        padding: 40px;
+        background-color: blue;
+        color: white;
+    }
+
+    .input-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+
+    input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        padding-bottom: 5px;
+    }
+
+    textarea {
+        width: 100%;
+        border: 1px solid black;
+        outline: none;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    label {
+        margin-bottom: 10px;
+        display: block;
+        color: black;
+    }
+
+    button {
+        margin-top: 10px;
+        background-color: blue;
+        color: white;
+        width: 100px;
+        height: 30px;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        border-radius: 0px 5px 15px blue;
+    }
+
+    .left h3 {
+        color: blue;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .right tr {
+        color: white;
+    }
+
+    .right h3 {
+        color: white;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    tr td:first-child {
+        padding-right: 20px;
+    }
+
+    tr td {
+        padding-top: 20px;
+    }
+
+}
+
+@media only screen and (min-width:798px) and (max-width:1500px) {
+    /*===============conatct=======================*/
+
+    .maincontainer {
+        width: 100%;
+        font-family: "Poppins", sans-serif;
+        background-color: aqua;
+        height: 100%;
+
+    }
+
+    .contact {
+        color: blue;
+        text-align: center;
+        font-size: 50px;
+        background-color: aqua;
+    }
+
+    .maincontainer h1 {
+        color: blue;
+        font-size: 30px;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .contact-box {
+        display: flex;
+
+    }
+
+    .left {
+        flex-basis: 65%;
+        margin-left: 40px;
+        padding: 40px 40px;
+        background-color: white;
+    }
+
+    .right {
+        flex-basis: 35%;
+        margin-right: 40px;
+        padding: 40px;
+        background-color: blue;
+        color: white;
+    }
+
+    .input-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .input-group {
+        flex-basis: 40%;
+    }
+
+    input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        padding-bottom: 5px;
+    }
+
+    textarea {
+        width: 100%;
+        border: 1px solid black;
+        outline: none;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    label {
+        margin-bottom: 10px;
+        display: block;
+        color: black;
+    }
+
+    button {
+        margin-top: 10px;
+        background-color: blue;
+        color: white;
+        width: 100px;
+        height: 30px;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        border-radius: 0px 5px 15px blue;
+    }
+
+    .left h3 {
+        color: blue;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .right tr {
+        color: white;
+    }
+
+    .right h3 {
+        color: white;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    tr td:first-child {
+        padding-right: 20px;
+    }
+
+    tr td {
+        padding-top: 20px;
+    } 
+}

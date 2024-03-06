@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}<link  rel="stylesheet" href="{% static "style/home.css" %}" >{% endblock  %}
+{% block js %}<script src="{% static "js/home.js" %}"></script>
+    {% endblock  %}
+
+{% block title %}Home Page  {% endblock  %}
+
+{% block content %}
+
+<section>
+
+
+    <div class="content">
+        <div class="slider">
+            <img src="{% static "images/newimg.jpeg" %}" id="slideimg">
+        </div>
+        <div class="text">
+
+
+            <h2>NEW LIFE FELLOWSHIP CHURCH</h2>
+            
+            <P class="p1"> If anyone is in Christ ,he is a new creation. </P>
+
+            <p class="p3">-2 CORINTHIANS 5:17</p>
+
+
+            <div class=watchbox>
+                <a class="watch" href="watches.html">WATCH SEREMONS</a>
+                <a class="watch" href="prayer.html">PRAYER REQUEST</a>
+            </div>
+            
+
+
+
+
+        </div>
+
+    </div>
+    <div class="container">
+        
+
+        <div class="first">
+           
+
+            
+            <h2> We are bible based church, committed worshiping the Lord in spirit and in truth and eager to serve the spiritual needs of the community</h2>
+        </div>
+
+
+
+        <div class="verse">
+            
+            <img src="{% static "images/schedule.jpeg" %}">
+           
+            <img src="{% static "images/yearprom.jpeg" %}">
+            
+        </div>
+
+    </div>
+
+   
+
+    </div>
+    </div>
+    <div class="help">
+        <center>
+            <h1> Need Prayer Help ? Contact Call Our Prayer Team at 12233235445 </h1>
+        </center>
+    </div>
+
+
+
+
+</section>
+
+
+
+{% endblock  %}

@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}contact {% endblock  %}
+
+{% block style %}<link  rel="stylesheet" href="{% static "style/contact.css" %}" >{% endblock  %}
+
+{% block content %}
+
+<section>
+    <h1 class="contact">Contact Us</h1>
+    <div class="maincontainer">
+        
+        
+        
+           <div class="contact-box">
+               <div class="left">
+                    <h3>Send Your Request</h3>
+
+
+                    <form action="/contact/"  method="POST">
+                        {% csrf_token %}
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name</label><input name='fullname'  type="text" placeholder="Enter Name"><br><br>
+                            </div>
+                            <div class="input-group">
+                                <label>E-mail</label><input name='email'  type="email" placeholder="Enter E-mail id"><br><br>
+                            </div>
+                            
+                        </div>
+                        <div class="input-row">
+                        <div class="input-group">
+                            <label>Phone</label><input name='phone' type="number" placeholder="Enter Phone.No">
+                        </div>
+                        <div class="input-group">
+                            <label>Subject</label><input  name='subject' type="text" placeholder="Enter Subject">
+                        </div>
+                        </div>
+                        <label>Message</label>
+                        <textarea  name='message' rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit">Submit</button>
+                        
+                    </form>
+
+
+               </div>
+               <div class="right">
+                <h3>Reach Us</h3>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>nlfchurchtpt@mnjknkjkj</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>12345678995</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>#1, Santha Nagar, Tirupattur-635601</td>
+                    </tr>
+                </table>
+               </div>
+       
+       
+       
+           </div>
+       </div>
+        
+        
+        
+       
+        
+    
+</section>
+
+
+{% endblock  %}

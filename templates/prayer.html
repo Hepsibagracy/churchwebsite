@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}prayer request  {% endblock  %}
+{% block style %}<link  rel="stylesheet" href="{% static "style/prayer.css" %}" >{% endblock  %}
+
+
+{% block content %}
+
+<section>
+
+    <div class="para">
+        <h1>Prayer Request</h1>
+    <h2>We Believe In The Power Of Prayer</h2>
+    <p> In Matt. 18:19, Jesus said, “If any two of you agree touching any matter on this earth, it shall be done.” Send your prayer request below and believe that God is going to move mightily in your life as our Prayer Warriors pray in agreement with your request!</p>
+    
+    
+    </div>
+    
+    
+    <div class="left">
+
+             
+        <form  action="/prayer/"  method="POST">  
+            {% csrf_token %}
+           <h3>Send Your Request</h3>
+            <div class="input-row">
+                <div class="input-group">
+                    <label>Name</label><input name='fullname' type="text" placeholder="Enter Your Name"><br><br>
+                    <label>E-mail</label><input name='email' type="email" placeholder="Enter your E-mail id"><br><br>
+                    <label>Phone</label><input name='phone' type="number" placeholder="Enter Your Mobile Number">
+                    
+                </div>
+                <div class="input-group">
+                   <label>Message</label>
+                   <textarea name='message' rows="7" placeholder="Your Message"></textarea>
+                   <button type="submit">Submit</button>
+                </div>
+                
+            </div>
+           </form>
+
+
+
+    <div class="par">
+        <p>Need prayer help? Call our prayer team at 1225656212</p>
+    </div>
+</section>
+
+{% endblock  %}

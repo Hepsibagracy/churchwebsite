@@ -1,0 +1,508 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+}
+
+.index{
+    overflow-x: hidden;
+}
+.top {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.header {
+   /* background-image: linear-gradient(to right  , rgb(15, 5, 71),rgb(70, 241, 213));
+    background-image: linear-gradient(to right  , rgb(11, 1, 46),rgb(30, 18, 197));
+      background-image:linear-gradient(aqua,blue); */
+    background-image: linear-gradient(to right  , blue,rgb(0, 10, 10));
+    height: 30px;
+}
+
+.bx {
+   
+    font-size: 10px;
+    color: white;
+}
+.head h{
+    font-size: 14px;
+}
+.details {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+
+}
+.bx-menu{
+    background-color: black;
+}
+.search {
+
+    position: absolute;
+    right: 5px;
+    display: flex;
+    top:5px;
+
+}
+
+.icon {
+    text-decoration-line: none;
+    display: block;
+}
+
+.header  {
+    font-size: 15px;
+}
+/*navbar---$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 70px; 
+}
+
+nav a:hover{
+   
+    background-image:linear-gradient( rgba(0, 0, 255, 0.856),rgb(2, 5, 34));
+    box-shadow: 2px 2px 8px blue;
+    color: white;
+    width: 100%;
+}
+
+.sidebar{
+   position: fixed;
+   top:0;right:0;
+   height: 100vh;
+   width:100%;
+   display: none;
+   flex-direction: column;
+   text-align: center;
+}
+.sidebar a{
+    width: 100%;
+}
+.bx-menu{
+    font-size: x-large; 
+    top:0;right:0;
+   
+}
+.menu-button{
+    display: none;
+}
+.bxl-whatsapp{
+    background-color:rgb(101, 216, 101);
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    font-size:60px;
+    border-radius: 30%;
+
+}
+
+
+
+
+
+@media only screen and (max-width:500px)
+ {
+    .top {
+        position: sticky;
+        top: 0;
+        z-index: 99;
+
+
+    }
+    .close{
+        background-color:black;
+        
+    }
+    .bx {
+        margin: 10px;
+        font-size: 20px;
+        color:black;
+    }
+    .bx .bx-x{
+        font-size: 40px;
+        color: blue;
+        background-color: black;
+       
+    }
+    .head {
+        display: none;
+    }
+
+    .header {
+        background-color: #2b95ff;
+        height: 50px;
+    }
+
+    .bx {
+        margin: 10px;
+        font-size: 20px;
+        color: white;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+
+    }
+
+    .search {
+        position: absolute;
+        right: 5px;
+        display: flex;
+        top:5px;
+
+    }
+
+    .icon {
+        text-decoration-line: none;
+        display: block;
+    }
+
+    .hideOnMobile{
+        display: none;
+      
+    }
+    .menu-button{
+        display: block;
+        
+        right:0px;top:0px;
+    }
+
+
+
+    
+    .fcontainer{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(blue,rgb(0, 10, 10));
+        text-align: center; 
+        
+    }
+
+    
+    .foot-col ul li{
+        
+        list-style: none;
+       
+        
+    }
+   
+   
+    .foot-col h4{
+        font-size: 18px;
+        text-decoration: underline;
+        font-style: oblique;
+        color: rgb(167, 227, 238);
+       
+    }
+   
+    .foot-col h{
+        font-size: 14px;
+        font-style: oblique;
+       
+    }
+    .foot-col ul li a{
+        text-decoration: none;
+        font-size: 14px;
+        padding: 5px 0px;
+        font-style: oblique;
+        color: white;
+        
+    }
+    
+    .footicon{
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(0, 10, 10);
+       
+    }
+    .footicon .bx{
+        border-radius: 100%;
+        background-color: black;
+    }
+    .bxl-whatsapp{
+        background-color:rgb(101, 216, 101);
+        position:fixed;
+        bottom: 0;
+        right: 0;
+        font-size:50px;
+        border-radius: 100%;
+    
+    }
+   
+   
+    
+    }
+    
+
+  
+
+
+
+
+@media only screen and (min-width:501px)  and (max-width:798px) 
+{
+    .sidebar{
+        width: 100%;
+        
+    }
+    .top {
+        position: sticky;
+        top: 0;
+        z-index: 99;
+
+
+    }
+    .close{
+        background-color:black;
+        
+    }
+    .bx {
+        margin: 10px;
+        font-size: 20px;
+        color:black;
+    }
+    .bx .bx-x{
+        font-size: 40px;
+        color: blue;
+        background-color: black;
+       
+    }
+    .head {
+        display: none;
+    }
+
+    .header {
+        background-color: #2b95ff;
+        height: 50px;
+    }
+
+    .bx {
+        margin: 10px;
+        font-size: 20px;
+        color: white;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+
+    }
+
+    .search {
+        position: absolute;
+        right: 5px;
+        display: flex;
+        top:5px;
+
+    }
+
+    .icon {
+        text-decoration-line: none;
+        display: block;
+    }
+
+    .hideOnMobile{
+        display: none;
+      
+    }
+    .menu-button{
+        display: block;
+        
+        right:0px;top:0px;
+    }
+
+    
+    .fcontainer{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(blue,rgb(0, 10, 10));
+        text-align: center; 
+        
+    }
+
+    
+    .foot-col ul li{
+        
+        list-style: none;
+       
+        
+    }
+   
+   
+    .foot-col h4{
+        font-size: 20px;
+        text-decoration: underline;
+        font-style: oblique;
+        color: aliceblue;
+       
+    }
+   
+    .foot-col h{
+        font-size: 16px;
+        font-style: oblique;
+       
+    }
+    .foot-col ul li a{
+        text-decoration: none;
+        font-size: 16px;
+        padding: 5px 0px;
+        font-style: oblique;
+        color: white;
+        
+    }
+    
+    .footicon{
+        padding-top: 20px;
+        display: flex;
+        justify-content: center; 
+        background-color: rgb(0, 10, 10);
+       
+    }
+    .footicon .bx{
+        border-radius: 100%;
+        background-color: black;
+    }
+    .bxl-whatsapp{
+        background-color:rgb(101, 216, 101);
+        position:fixed;
+        bottom: 0;
+        right: 0;
+        font-size:60px;
+        border-radius: 100%;
+    
+    }
+   
+   
+}
+@media only screen and (min-width:798px)  and (max-width:1500px) 
+   
+    {.top {
+        position: sticky;
+        top: 0;
+        z-index: 99;
+        overflow: hidden;
+
+
+    }
+
+    .header {
+        background-color: #2b95ff;
+        height: 50px;
+    }
+    .head{
+        color:white;
+    }
+
+    .bx {
+        margin: 10px;
+        font-size: 20px;
+        color: white;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+
+    }
+
+    .search {
+
+        position: absolute;
+        right: 5px;
+        display: flex;
+        top:5px;
+
+    }
+
+    .icon {
+        text-decoration-line: none;
+        display: block;
+    }
+
+
+    
+
+    
+    .bxl-whatsapp{
+        background-color:rgb(101, 216, 101);
+        position:fixed;
+        bottom: 0;
+        right: 0;
+        font-size:70px;
+        border-radius: 50%;
+
+    }
+    .fcontainer{
+        width:100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-image: linear-gradient(blue,rgb(0, 10, 10));
+        
+       
+    }
+    
+    .foot-col ul li{
+        
+        list-style: none;
+        align-items:start;
+        
+    }
+    .foot-col h4{
+        font-size: 20px;
+        text-decoration: underline;
+        font-style: oblique;
+        color:whitesmoke;
+    }
+    .foot-col h{
+        font-size: 16px;
+       
+        font-style: oblique;
+    }
+    .foot-col ul li a{
+        text-decoration: none;
+        font-size: 16px;
+        padding: 5px 0px;
+        font-style: oblique;
+        
+    }
+    .foot-col a{
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    .footicon{
+        display: flex;
+        justify-content: center;
+            
+        background-color: rgb(0, 10, 10);
+       
+    }
+    .footicon .bx{
+        border-radius: 100%;
+        background-color: rgb(0, 10, 10);
+    }
+    }
