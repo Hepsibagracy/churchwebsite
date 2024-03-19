@@ -21,14 +21,24 @@
     <div class="left">
 
              
-        <form  action="/prayer/"  method="POST">  
+        <form  action="/prayer/"  method="POST"  id="form">  
             {% csrf_token %}
+
+
+            {% for message in messages%}
+           <p class="error"> {{message}}</p>
+           {% endfor %}
+
+
+
+
            <h3>Send Your Request</h3>
+           
             <div class="input-row">
                 <div class="input-group">
-                    <label>Name</label><input name='fullname' type="text" placeholder="Enter Your Name"><br><br>
-                    <label>E-mail</label><input name='email' type="email" placeholder="Enter your E-mail id"><br><br>
-                    <label>Phone</label><input name='phone' type="number" placeholder="Enter Your Mobile Number">
+                    <label>Name</label><input name='fullname' type="text" placeholder="Enter Your Name">          <br><br>
+                    <label>E-mail</label><input name='email' type="email" placeholder="Enter your E-mail id">     <br><br>
+                    <label>Phone</label><input name='phone' type="number" placeholder="Enter Your Mobile Number"> 
                     
                 </div>
                 <div class="input-group">

@@ -15,6 +15,11 @@
         
            <div class="contact-box">
                <div class="left">
+                <div>
+                    {% for message in messages%}
+                    <p class="error"> {{message}}</p>
+                    {% endfor %}
+                </div>
                     <h3>Send Your Request</h3>
 
 
@@ -23,22 +28,47 @@
                         <div class="input-row">
                             <div class="input-group">
                                 <label>Name</label><input name='fullname'  type="text" placeholder="Enter Name"><br><br>
+                                <div>
+                                    {% for message in messages%}
+                                    <p class="error"> {{message}}</p>
+                                    {% endfor %}
+                                </div>
                             </div>
                             <div class="input-group">
                                 <label>E-mail</label><input name='email'  type="email" placeholder="Enter E-mail id"><br><br>
+                                <div>
+                                    {% for message in messages%}
+                                    <p class="error"> {{message}}</p>
+                                    {% endfor %}
+                                </div>
                             </div>
                             
                         </div>
                         <div class="input-row">
                         <div class="input-group">
                             <label>Phone</label><input name='phone' type="number" placeholder="Enter Phone.No">
+                            <div>
+                                {% for message in messages%}
+                                <p class="error"> {{message}}</p>
+                                {% endfor %}
+                            </div>
                         </div>
                         <div class="input-group">
                             <label>Subject</label><input  name='subject' type="text" placeholder="Enter Subject">
+                            <div>
+                                {% for message in messages%}
+                                <p class="error"> {{message}}</p>
+                                {% endfor %}
+                            </div>
                         </div>
                         </div>
                         <label>Message</label>
                         <textarea  name='message' rows="10" placeholder="Your Message"></textarea>
+                        <div>
+                            {% for message in messages%}
+                            <p class="error"> {{message}}</p>
+                            {% endfor %}
+                        </div>
                         <button type="submit">Submit</button>
                         
                     </form>

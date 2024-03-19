@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% comment "" %}{% block js %}<script src="{% static "js/home.js" %}"></script>
+    {% endblock  %}{% endcomment %}
+
 {% block style %}<link  rel="stylesheet" href="{% static "style/home.css" %}" >{% endblock  %}
-{% block js %}<script src="{% static "js/home.js" %}"></script>
-    {% endblock  %}
+
 
 {% block title %}Home Page  {% endblock  %}
 
@@ -14,10 +16,9 @@
 
     <div class="content">
         <div class="slider">
-            <img src="{% static "images/newimg.jpeg" %}" id="slideimg">
+            <img src="{% static "images/pastor.jpeg" %}" id="slideimg">
         </div>
         <div class="text">
-
 
             <h2>NEW LIFE FELLOWSHIP CHURCH</h2>
             

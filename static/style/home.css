@@ -219,7 +219,7 @@
     /*==================== after header======================*/
     
 
-    /*#slideimg{
+   /* #slideimg{
         width:100%; 
         height:85vh;
         filter:brightness(50%);
@@ -229,19 +229,25 @@
     @keyframes zoom{
         0%{
             transform: scale(1.1);
+            background-image: url(newimg1.jpeg);
         }
         15%{
             transform: scale(1);
+            background-image: url(nlfpastor.jpeg);
+            
         }
         85%{
             transform: scale(1);
+            background-image: url(nlfpastor.jpeg)
+           
         }
         100%{
             transform: scale(1.1);
+            background-image: url(newimg1.jpeg);
         }
-    }*/
+    }
 
-   
+   */
 
     #slideimg{
         width:100%; 
@@ -292,15 +298,15 @@
 
     .first h2 {
        
-        font-size: 40px;
-        font-family: Montserrat, sans-serif;
-        font-weight: 900;
+         font-size: 5px;
+        font-family: sans-serif;
+        font-weight: 300;
         text-align: center;
         letter-spacing: 2px;
         line-height: 70px;
         padding:20px 100px 10PX 100px;
         color: blue;
-       
+        background-color:rgb(233, 232, 238);
     }
 
    

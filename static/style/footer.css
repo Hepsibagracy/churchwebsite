@@ -125,6 +125,7 @@
         text-decoration: underline;
         font-style: oblique;
         color: aliceblue;
+
        
     }
    
@@ -201,7 +202,8 @@
         font-size: 20px;
         text-decoration: underline;
         font-style: oblique;
-        color:whitesmoke;
+        color:black;
+        padding-top: 10px;
     }
     .foot-col h{
         font-size: 16px;
