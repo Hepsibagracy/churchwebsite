@@ -9,7 +9,7 @@
 @media only screen and (max-width:500px)
  {
     
-    /*=========================== background img with content=============================*/
+  
     .content{
         position: relative;
         background-image: linear-gradient(blue,rgb(0, 10, 10));
@@ -26,8 +26,11 @@
         width: 100%;
         z-index: 0;
         color:white;
-        text-shadow: -1px 1px 0 blue, 1px 1px 0 blue,1px -1px 0 blue,-1px -1px 0 blue;
+        
         text-align: center;
+    }
+    .context .text .p1,.p3{
+        text-shadow: -1px 1px 0 blue, 1px 1px 0 blue,1px -1px 0 blue,-1px -1px 0 blue;
     }
 
     .content img{
@@ -56,24 +59,31 @@
      .watch{
          text-decoration: none;
          margin:10px 0px;
-         color:white;
+
          border:2px solid white;
          width: 200px;
-        
+         
+         
+         color: white;
      
+     }
+     .watch:hover{
+        color:blue;
+        background-color: white;
      }
    
 
     .first h2 {
         padding: 5px 10PX;
         font-size: 15px;
-        font-family: Montserrat, sans-serif;
-        font-weight: 700;
+        font-family:sans-serif;
+        font-weight: 900;
         color:blue;
         text-align: center;
         letter-spacing: 2px;
         line-height: 40px;
         padding-bottom: 5PX;
+        background-color:rgb(233, 232, 238);
       
     }
    
@@ -82,6 +92,7 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
+        background-color:rgb(233, 232, 238);
        
 
     }
@@ -93,16 +104,16 @@
     .help h1{
         padding: 10px 10px;
         font-size: 15px;
-        font-family: Montserrat, sans-serif;
+        font-family: sans-serif;
+        font-weight: 900;
         text-align: center;
         letter-spacing: 2px;
         line-height: 30px;
         color: blue;
+        background-color:rgb(233, 232, 238);
        
 
     }
-    
-   
     
     }
     
@@ -115,91 +126,101 @@
 @media only screen and (min-width:501px)  and (max-width:798px) 
 {
    
-  
+   /*=========================== background img with content=============================*/
+   .content{
+    position: relative;
+    background-image: linear-gradient(blue,rgb(0, 10, 10));
+    background-repeat: no-repeat;
+    width:100%;height: 80vh;
+    text-align: center;
+    
+}
+.content .text{
+    position: absolute;
+    top:10%;left:0%;
+    width: 100%;
+    z-index: 0;
+    color:white;
+    text-shadow: -1px 1px 0 blue, 1px 1px 0 blue,1px -1px 0 blue,-1px -1px 0 blue;
+    text-align: center;
+}
 
+.content img{
+   display: none;
+}
+.text h2{
+    font-size: 35px;
+    padding-bottom: 80px;
+ }
 
-    /*=========================== background img with content=============================*/
-    .content{
-        position: relative;
-        background-image: linear-gradient(blue,rgb(0, 10, 10));
-        background-repeat: no-repeat;
-        width:100%;height: 80vh;
-        text-align: center;
-        
-    }
-    .content .text{
-        position: absolute;
-        top:10%;left:0%;
-        width: 100%;
-        z-index: 0;
-        color:white;
-        text-shadow: -1px 1px 0 blue, 1px 1px 0 blue,1px -1px 0 blue,-1px -1px 0 blue;
-        text-align: center;
-    }
+ .text .p1{
+    font-size: 35px;
+    padding-bottom: 20px;
+ }
+ .text .p3{
+     
+     padding-bottom: 80px;
+  }
 
-    .content img{
-       display: none;
-    }
-    .text h2{
-        font-size: 35px;
-        padding-bottom: 80px;
-     }
-  
-     .text .p1{
-        font-size: 35px;
-        padding-bottom: 20px;
-     }
-     .text .p3{
-         
-         padding-bottom: 80px;
-      }
  
-     
-     
-     .watch{
-         text-decoration: none;
-         font-size: 25px;
-         color:white;
-         border:2px solid white;
-     }
+ 
+ .watch{
+     text-decoration: none;
+     font-size: 25px;
+     color:white;
+     border:2px solid white;
+ }
+ .watch:hover{
+    color:blue;
+    background-color: white;
+ }
+
+
+.first h2 {
+    padding: 5px 10PX;
+    color: blue;
+    font-size: 25px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 40px;
+    padding-bottom: 5PX;
+    background-color:rgb(233, 232, 238);
+   
+}
+
+.verse {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color:rgb(233, 232, 238);
+   
    
 
-    .first h2 {
-        padding: 5px 10PX;
-        color: blue;
-        font-size: 25px;
-        font-family: Montserrat, sans-serif;
-        font-weight: 700;
-        text-align: center;
-        letter-spacing: 2px;
-        line-height: 40px;
-        padding-bottom: 5PX;
-    }
+}
+.verse img{
+    width:350px;
+    height:300px;
+    margin: 10px 0px;
+}
+.help h1{
+    padding: 10px 10px;
+    font-size: 25px;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: blue;
+    background-color:rgb(233, 232, 238);
+   
+   
 
-    .verse {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-       
+}
 
-    }
-    .verse img{
-        width:350px;
-        height:300px;
-        margin: 10px 0px;
-    }
-    .help h1{
-        padding: 10px 10px;
-        font-size: 25px;
-        font-family: Montserrat, sans-serif;
-        text-align: center;
-        letter-spacing: 2px;
-        line-height: 30px;
-        color: blue;
-       
 
-    }
+    
     
    
    
@@ -214,41 +235,6 @@
 
 
     }
-
-    
-    /*==================== after header======================*/
-    
-
-   /* #slideimg{
-        width:100%; 
-        height:85vh;
-        filter:brightness(50%);
-        animation:zoom 3s linear infinite;
-        
-    }
-    @keyframes zoom{
-        0%{
-            transform: scale(1.1);
-            background-image: url(newimg1.jpeg);
-        }
-        15%{
-            transform: scale(1);
-            background-image: url(nlfpastor.jpeg);
-            
-        }
-        85%{
-            transform: scale(1);
-            background-image: url(nlfpastor.jpeg)
-           
-        }
-        100%{
-            transform: scale(1.1);
-            background-image: url(newimg1.jpeg);
-        }
-    }
-
-   */
-
     #slideimg{
         width:100%; 
         height:85vh;
@@ -292,15 +278,20 @@
          font-size: 25px;
          color:white;
          border:2px solid white;
+         
+     }
+     .watch:hover{
+        color:blue;
+        background-color: white;
      }
     
 
 
     .first h2 {
        
-         font-size: 5px;
+        font-size: 40px;
         font-family: sans-serif;
-        font-weight: 300;
+        font-weight: 900;
         text-align: center;
         letter-spacing: 2px;
         line-height: 70px;
@@ -316,9 +307,10 @@
         
         text-align: center;
         justify-content: center;
-      
-
+        background-color:rgb(233, 232, 238);
     }
+
+    
     .verse img{
         width:550px;
         height:400px;
@@ -339,12 +331,14 @@
         line-height: 70px;
         padding-bottom: 10PX; 
         color:blue;
+        background-color:rgb(233, 232, 238);
    
 
     }
     
     
     
+
     
     
     

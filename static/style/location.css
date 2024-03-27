@@ -10,44 +10,154 @@
 
 
 
+*{
+    margin: 0;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+}
+/*header---$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.index{
+    overflow-x: hidden;
+}
+.top {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.header {
+   /* background-image: linear-gradient(to right  , rgb(15, 5, 71),rgb(70, 241, 213));
+    background-image: linear-gradient(to right  , rgb(11, 1, 46),rgb(30, 18, 197));
+      background-image:linear-gradient(aqua,blue); */
+      background-image: linear-gradient(to right  , rgb(11, 1, 46),rgb(30, 18, 197));
+    height: 30px;
+}
+
+.bx {
+   
+    font-size: 10px;
+    color: white;
+}
+.head h{
+    font-size: 14px;
+}
+.details {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+
+}
+.bx-menu{
+    background-color: black;
+}
+.search {
+
+    position: absolute;
+    right: 5px;
+    display: flex;
+    top:5px;
+
+}
+
+.icon {
+    text-decoration-line: none;
+    display: block;
+}
+
+.header  {
+    font-size: 15px;
+}
+/*navbar---$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 70px; 
+}
+
+nav a:hover{
+   
+    background-image:linear-gradient( rgba(0, 0, 255, 0.856),rgb(2, 5, 34));
+    box-shadow: 2px 2px 8px blue;
+    color: white;
+    width: 100%;
+}
+
+.sidebar{
+   position: fixed;
+   top:0;right:0;
+   height: 100vh;
+   width:100%;
+   display: none;
+   flex-direction: column;
+   text-align: center;
+}
+.sidebar a{
+    width: 100%;
+}
+.bx-menu{
+    font-size: x-large; 
+    top:0;right:0;
+   
+}
+.menu-button{
+    display: none;
+}
+.bxl-whatsapp{
+    background-color:rgb(101, 216, 101);
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    font-size:60px;
+    border-radius: 30%;
+
+}
+
+/*===============  location =======================*/
+
+
+
+
+
+
+
 @media only screen and (max-width:500px)
  {
-   
-
-   
-   
-   
-   
-    
-    }
-    
-
-  
-
-
-
-
-@media only screen and (min-width:501px)  and (max-width:768px) 
-{
-    
-}
-@media only screen and (min-width:768px)  and (max-width:1500px) 
-   
-    {.top {
+    .top {
         position: sticky;
         top: 0;
         z-index: 99;
-        overflow: hidden;
 
 
+    }
+    .close{
+        background-color:black;
+        
+    }
+    .bx {
+        margin: 10px;
+        font-size: 20px;
+        color:black;
+    }
+    .bx .bx-x{
+        font-size: 40px;
+        color: blue;
+        background-color: black;
+       
+    }
+    .head {
+        display: none;
     }
 
     .header {
-        background-color: #2b95ff;   
+        background-color: #2b95ff;
         height: 50px;
-    }
-    .head{
-        color:white;
     }
 
     .bx {
@@ -64,7 +174,6 @@
     }
 
     .search {
-
         position: absolute;
         right: 5px;
         display: flex;
@@ -77,155 +186,277 @@
         display: block;
     }
 
-
-    .giving {
-        border: 2px solid #b0e9d9;
-        color: white;
-        background-color: rgb(79, 148, 194);
-        margin-left: 85px;
-        justify-content: center;
-        padding-left: 0px;
-        box-shadow: 0 2px 20px 0px;
-
+    .hideOnMobile{
+        display: none;
+      
     }
-
-    /*==================== after header======================*/
+    .menu-button{
+        display: block;
+        
+        right:0px;top:0px;
+    }
+    /*===============================location=================*/
     
 
-    /*#slideimg{
-        width:100%; 
-        height:85vh;
-        filter:brightness(50%);
-        animation:zoom 3s linear infinite;
+    /*=========================== background img with content=============================
+    .locate{
+        background-color:rgb(233, 232, 238);
+        color: blue;
+    
+    }
+    .loaction{
+        width:00px;
+        height: 200px;
         
     }
-    @keyframes zoom{
-        0%{
-            transform: scale(1.1);
-        }
-        15%{
-            transform: scale(1);
-        }
-        85%{
-            transform: scale(1);
-        }
-        100%{
-            transform: scale(1.1);
-        }
+    .locate h2{
+        font-size: 35px;
+    }
+    .addr{
+        background-color:rgb(233, 232, 238);
+        color:blue;
+    }
+    iframe{
+        width: 300px;
+        height: 300px;
+    }
+    .addr{
+        font-style: italic;
+    }
+    .addr h1{
+        padding-top: 10px;
+        padding-bottom: 10px;
     }*/
 
-   
-
-    #slideimg{
-        width:100%; 
-        height:85vh;
-    }
-    .content{
-        position: relative;
-        text-align: center;
-        
-    }
-    .content .text{
-        position: absolute;
-        top:10%;left:0%;
-        width: 100%;
-        z-index: 0;
-        color:white;
-        text-shadow: -1px 1px 0 blue, 1px 1px 0 blue,1px -1px 0 blue,-1px -1px 0 blue;
-
-        
-        
-    }
-
-    .text h2{
-        font-size: 40px;
-        padding-bottom: 60px;
-     }
-     .text h3{
-         font-size: 40px;
-         padding-bottom: 60px;
-      }
-     .text .p1{
-        font-size: 40px;
-        padding-bottom: 20px;
-     }
-     .text .p3{
-         font-size: 20px;
-         padding-bottom: 50px;
-      }
- 
-     
-     
-     .watch{
-         text-decoration: none;
-         font-size: 15px;
-         color:white;
-         border:2px solid black;
-     }
+    .locate{
+        background-color:rgb(233, 232, 238);
+        color: blue;
     
-    .first h1 {
-        padding-top: 20px;
-        font-size: 40px;
-        font-family: Montserrat, sans-serif;
-        font-weight: 900;
-        text-align: center;
-        letter-spacing: 2px;
-        line-height: 70px;
+    }
+    .locate h2{
+        font-size: 30px;
+    }
+    .addr{
+        background-color:rgb(233, 232, 238);
         color:blue;
-        
+    }
+   
+    .addr{
+        font-style: italic;
+    }
+    .addr h1{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        text-decoration: underline;
 
     }
-
-    .first h2 {
-        padding-top: 20px;
-        font-size: 30px;
-        font-family: Montserrat, sans-serif;
-        font-weight: 700;
-        text-align: center;
-        letter-spacing: 2px;
-        line-height: 70px;
-        padding-bottom: 10PX;
-        background-color: aqua;
+    .addr h3{
+        font-size: 15px;
     }
-
-    .media {
-        background-color: blue;
-        align-content: center;
-    }
-    #inputbox {
-        width: 600px;
-        background-color: blanchedalmond;
-    }
-
-    .verse {
-       
-       
-        text-align: center;
+    .fcontainer{
+        width:100%;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-      
-
-    }
-    .verse img{
-        width:550px;
-        height:400px;
-    }
-
-    .bxl-whatsapp {
-        color: green;
+        align-items: center;
+        background-color: #2b95ff;  
+        text-align: center; 
+        
     }
 
     
-    .help h1{
-        padding-top: 10px;
-        font-size: 30px;
-        font-family: Montserrat, sans-serif;
-        text-align: center;
-        letter-spacing: 2px;
-        line-height: 70px;
-        padding-bottom: 10PX;
-        background-image:linear-gradient(aqua,blue);
-        color:white;
+    .foot-col ul li{
         
+        list-style: none;
+       
+        
+    }
+   
+   
+    .foot-col h4{
+        font-size: 20px;
+        text-decoration: underline;
+        font-style: oblique;
+       
+    }
+   
+    .foot-col h{
+        font-size: 16px;
+        font-style: oblique;
+       
+    }
+    .foot-col ul li a{
+        text-decoration: none;
+        font-size: 16px;
+        padding: 5px 0px;
+        font-style: oblique;
+        color: white;
+        
+    }
+    
+    .footicon{
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        background-color: #2b95ff; 
+       
+    }
+    .footicon .bx{
+        border-radius: 100%;
+        background-color: black;
+    }
+   
+   
+   
+    
+    }
+    
+
+  
+
+
+
+
+@media only screen and (min-width:501px)  and (max-width:768px) 
+{
+    .sidebar{
+        width: 100%;
+        
+    }
+    .top {
+        position: sticky;
+        top: 0;
+        z-index: 99;
+
 
     }
+    .close{
+        background-color:black;
+        
+    }
+    .bx {
+        margin: 10px;
+        font-size: 20px;
+        color:black;
+    }
+    .bx .bx-x{
+        font-size: 40px;
+        color: blue;
+        background-color: black;
+       
+    }
+    .head {
+        display: none;
+    }
+
+    .header {
+        background-color: #2b95ff;
+        height: 50px;
+    }
+
+    .bx {
+        margin: 10px;
+        font-size: 20px;
+        color: white;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+
+    }
+
+    .search {
+        position: absolute;
+        right: 5px;
+        display: flex;
+        top:5px;
+
+    }
+
+    .icon {
+        text-decoration-line: none;
+        display: block;
+    }
+
+    .hideOnMobile{
+        display: none;
+      
+    }
+    .menu-button{
+        display: block;
+        
+        right:0px;top:0px;
+    }
+
+    /*=========================== background img with content=============================*/
+    .locate{
+        background-color:rgb(233, 232, 238);
+        color: blue;
+    
+    }
+    .loaction{
+        width:350px;
+        height: 450px;
+        
+    }
+    .locate h2{
+        font-size: 35px;
+    }
+    .addr{
+        background-color:rgb(233, 232, 238);
+        color:blue;
+    }
+    iframe{
+        width: 300px;
+        height: 300px;
+    }
+    .addr{
+        font-style: italic;
+    }
+    .addr h1{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+   
+   
+}
+@media only screen and (min-width:768px)  and (max-width:1500px) 
+   
+    {
+
+
+    .locate{
+        background-color:rgb(233, 232, 238);
+        color: blue;
+    
+    }
+    .loaction{
+        width:350px;
+        height: 450px;
+        
+    }
+    .locate h2{
+        font-size: 40px;
+    }
+    .addr{
+        background-color:rgb(233, 232, 238);
+        color:blue;
+    }
+    iframe{
+        width: 550px;
+        height: 350px;
+    }
+    .addr{
+        font-style: italic;
+    }
+    .addr h1{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    
+   
     }

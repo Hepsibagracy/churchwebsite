@@ -21,7 +21,6 @@
 
 @media only screen and (max-width:500px)
  {
-   
     .fcontainer{
         width:100%;
         display: flex;
@@ -32,7 +31,10 @@
         text-align: center; 
         
     }
-
+    .foot-col{
+        padding-top: 10px;
+        
+    }
     
     .foot-col ul li{
         
@@ -46,7 +48,7 @@
         font-size: 18px;
         text-decoration: underline;
         font-style: oblique;
-        color: rgb(167, 227, 238);
+        color: white;
        
     }
    
@@ -87,6 +89,9 @@
    
    
     
+    
+   
+    
     }
     
 
@@ -97,8 +102,6 @@
 
 @media only screen and (min-width:501px)  and (max-width:798px) 
 {
-    
-
     
     .fcontainer{
         width:100%;
@@ -125,7 +128,6 @@
         text-decoration: underline;
         font-style: oblique;
         color: aliceblue;
-
        
     }
    
@@ -163,74 +165,75 @@
         border-radius: 100%;
     
     }
-   
+    
+  
    
 }
 @media only screen and (min-width:798px)  and (max-width:1500px) 
    
     {
     
-
+        .bxl-whatsapp{
+            background-color:rgb(101, 216, 101);
+            position:fixed;
+            bottom: 0;
+            right: 0;
+            font-size:100px;
+            border-radius: 50%;
     
-    .bxl-whatsapp{
-        background-color:rgb(101, 216, 101);
-        position:fixed;
-        bottom: 0;
-        right: 0;
-        font-size:120px;
-        border-radius: 50%;
-
-    }
-    .fcontainer{
-        width:100%;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        background-image: linear-gradient(blue,rgb(0, 10, 10));
-        
-       
-    }
-    
-    .foot-col ul li{
-        
-        list-style: none;
-        align-items:start;
-        
-    }
-    .foot-col h4{
-        font-size: 20px;
-        text-decoration: underline;
-        font-style: oblique;
-        color:black;
-        padding-top: 10px;
-    }
-    .foot-col h{
-        font-size: 16px;
-       
-        font-style: oblique;
-    }
-    .foot-col ul li a{
-        text-decoration: none;
-        font-size: 16px;
-        padding: 5px 0px;
-        font-style: oblique;
-        
-    }
-    .foot-col a{
-        display: flex;
-        flex-direction: column;
-        color: white;
-    }
-    .footicon{
-        display: flex;
-        justify-content: center;
+        }
+        .fcontainer{
+            width:100%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-image: linear-gradient(blue,rgb(0, 10, 10));
+            padding-top: 10px;
             
-        background-color: rgb(0, 10, 10);
-       
-    }
-    .footicon .bx{
-        border-radius: 100%;
-        background-color: rgb(0, 10, 10);
-    }
+           
+        }
+        
+        .foot-col ul li{
+            
+            list-style: none;
+            align-items:start;
+            
+        }
+        .foot-col h4{
+            font-size: 20px;
+            text-decoration: underline;
+            font-style: oblique;
+            color:whitesmoke;
+        }
+        .foot-col h{
+            font-size: 16px;
+           
+            font-style: oblique;
+        }
+        .foot-col ul li a{
+            text-decoration: none;
+            font-size: 16px;
+            padding: 5px 0px;
+            font-style: oblique;
+            
+        }
+        .foot-col a{
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+        .footicon{
+            display: flex;
+            justify-content: center;
+                
+            background-color: rgb(0, 10, 10);
+           
+        }
+        .footicon .bx{
+            border-radius: 100%;
+            background-color: rgb(0, 10, 10);
+        }
+    
+   
     }
