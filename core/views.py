@@ -37,7 +37,7 @@ def prayer(request):
 
                
         else:
-            messages.info(request,'All fields are required')
+            messages.info(request,'Please enter all the details')
             return redirect('prayer')
 
     return render(request,'prayer.html')
@@ -65,7 +65,7 @@ def contact(request):
              
              
         else:
-            messages.info(request,'All fields are required')
+            messages.info(request,'Please enter all the details')
             return redirect('contact')
 
        

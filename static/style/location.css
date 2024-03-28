@@ -4,18 +4,6 @@
     font-family: "Poppins", sans-serif;
 }
 /*header---$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
-
-
-
-
-
-
-*{
-    margin: 0;
-    padding:0;
-    font-family: "Poppins", sans-serif;
-}
-/*header---$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 .index{
     overflow-x: hidden;
 }
@@ -419,14 +407,145 @@ nav a:hover{
         padding-top: 10px;
         padding-bottom: 10px;
     }
+    .fcontainer{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #2b95ff;  
+        text-align: center; 
+        
+    }
 
+    
+    .foot-col ul li{
+        
+        list-style: none;
+       
+        
+    }
+   
+   
+    .foot-col h4{
+        font-size: 20px;
+        text-decoration: underline;
+        font-style: oblique;
+       
+    }
+   
+    .foot-col h{
+        font-size: 16px;
+        font-style: oblique;
+       
+    }
+    .foot-col ul li a{
+        text-decoration: none;
+        font-size: 16px;
+        padding: 5px 0px;
+        font-style: oblique;
+        color: white;
+        
+    }
+    
+    .footicon{
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        background-color: #2b95ff; 
+       
+    }
+    .footicon .bx{
+        border-radius: 100%;
+        background-color: black;
+    }
    
    
 }
 @media only screen and (min-width:768px)  and (max-width:1500px) 
    
-    {
+    {.top {
+        position: sticky;
+        top: 0;
+        z-index: 99;
+        overflow: hidden;
 
+
+    }
+
+    .header {
+        background-color: #2b95ff;
+        height: 50px;
+    }
+    .head{
+        color:white;
+    }
+
+    .bx {
+        margin: 10px;
+        font-size: 20px;
+        color: white;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+
+    }
+
+    .search {
+
+        position: absolute;
+        right: 5px;
+        display: flex;
+        top:5px;
+
+    }
+
+    .icon {
+        text-decoration-line: none;
+        display: block;
+    }
+
+
+    .giving {
+        border: 2px solid #b0e9d9;
+        color: white;
+        background-color: rgb(79, 148, 194);
+        margin-left: 85px;
+        justify-content: center;
+        padding-left: 0px;
+        box-shadow: 0 2px 20px 0px;
+
+    }
+
+    /*==================== after header======================*/
+    
+
+    /*#slideimg{
+        width:100%; 
+        height:85vh;
+        filter:brightness(50%);
+        animation:zoom 3s linear infinite;
+        
+    }
+    @keyframes zoom{
+        0%{
+            transform: scale(1.1);
+        }
+        15%{
+            transform: scale(1);
+        }
+        85%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(1.1);
+        }
+    }*/
+
+   
 
     .locate{
         background-color:rgb(233, 232, 238);
@@ -458,5 +577,63 @@ nav a:hover{
     }
     
     
-   
+    .bxl-whatsapp{
+        background-color:rgb(101, 216, 101);
+        position:fixed;
+        bottom: 0;
+        right: 0;
+        font-size:70px;
+        border-radius: 50%;
+
+    }
+    .fcontainer{
+        width:100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-image: linear-gradient(to right  , rgb(11, 1, 46),rgb(30, 18, 197));
+        border-top-left-radius: 10%;
+        border-top-right-radius: 10%;
+       
+    }
+    
+    .foot-col ul li{
+        
+        list-style: none;
+        align-items:start;
+        
+    }
+    .foot-col h4{
+        font-size: 20px;
+        text-decoration: underline;
+        font-style: oblique;
+    }
+    .foot-col h{
+        font-size: 16px;
+       
+        font-style: oblique;
+    }
+    .foot-col ul li a{
+        text-decoration: none;
+        font-size: 16px;
+        padding: 5px 0px;
+        font-style: oblique;
+        
+    }
+    .foot-col a{
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    .footicon{
+        display: flex;
+        justify-content: center;
+        background-image: linear-gradient(to right  , rgb(11, 1, 46),rgb(30, 18, 197));
+       
+    }
+    .footicon .bx{
+        border-radius: 100%;
+        background-color: black;
+    }
     }
